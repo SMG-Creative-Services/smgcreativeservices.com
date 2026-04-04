@@ -1191,9 +1191,25 @@ h1, h2, h3, h4 {
   .hero-buttons {
     justify-content: center;
   }
+  .hero-visual {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    align-items: center;
+  }
+  .hero-video-wrap {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px;
+  }
+  .hero-video-wrap iframe {
+    aspect-ratio: 16/9;
+    border-radius: 13px;
+  }
   .hero-illustration {
-    width: 340px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
     margin: 0 auto;
   }
   .services-grid {
