@@ -252,18 +252,95 @@ h1, h2, h3, h4 {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  position: relative;
+}
+
+.hero-illustration::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 20px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--lavender), var(--mint), var(--peach), var(--sky));
+  border-radius: 3px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.hero-illustration::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 19px;
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(200,162,232,0.9), rgba(168,230,207,0.9));
+  border-radius: 5px;
+  z-index: 1;
+  filter: blur(1px);
+  animation: pulse-line 3s ease-in-out infinite;
+}
+
+@keyframes pulse-line {
+  0% { top: 30px; opacity: 1; }
+  50% { top: calc(100% - 70px); opacity: 0.6; }
+  100% { top: 30px; opacity: 1; }
 }
 
 .hero-card {
   background: #fff;
   border-radius: 14px;
-  padding: 12px 16px;
+  padding: 12px 16px 12px 24px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
   display: flex;
   align-items: center;
   gap: 10px;
   animation: float 6s ease-in-out infinite;
   font-size: 0.85rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+.hero-card:nth-child(1)::before {
+  background: var(--lavender);
+  box-shadow: 0 0 8px var(--lavender);
+  animation-delay: 0s;
+}
+
+.hero-card:nth-child(2)::before {
+  background: var(--mint);
+  box-shadow: 0 0 8px var(--mint);
+  animation-delay: 0.5s;
+}
+
+.hero-card:nth-child(3)::before {
+  background: var(--peach);
+  box-shadow: 0 0 8px var(--peach);
+  animation-delay: 1s;
+}
+
+.hero-card:nth-child(4)::before {
+  background: var(--sky);
+  box-shadow: 0 0 8px var(--sky);
+  animation-delay: 1.5s;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 1; }
+  50% { transform: translateY(-50%) scale(1.5); opacity: 0.6; }
 }
 
 .hero-card:nth-child(1) {
