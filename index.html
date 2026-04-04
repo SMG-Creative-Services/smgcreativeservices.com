@@ -1008,6 +1008,23 @@ h1, h2, h3, h4 {
   background: var(--dark);
   color: #fff;
   position: relative;
+  overflow-x: hidden;
+}
+
+.intake form {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-grid {
+  width: 100%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  min-width: 0;
 }
 
 .intake::before {
@@ -1023,6 +1040,12 @@ h1, h2, h3, h4 {
 .intake-inner {
   max-width: 720px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.intake-inner * {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .intake .section-header {
