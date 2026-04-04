@@ -242,8 +242,9 @@ h1, h2, h3, h4 {
 /* Hero Visual */
 .hero-visual {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 32px;
   position: relative;
 }
 
@@ -318,6 +319,110 @@ h1, h2, h3, h4 {
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
+}
+
+/* ---- HERO VIDEO ---- */
+.hero-video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.hero-video-wrap iframe {
+  width: 100%;
+  aspect-ratio: 9/16;
+  border: none;
+  display: block;
+}
+
+/* ---- OUR WORK ---- */
+.our-work {
+  padding: 100px 24px;
+  background: linear-gradient(180deg, var(--warm-white) 0%, var(--lavender-bg) 50%, var(--warm-white) 100%);
+}
+
+.our-work-content {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.our-work-content p {
+  font-size: 1.05rem;
+  color: var(--text-mid);
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+.our-work-content p strong {
+  color: var(--text-dark);
+}
+
+.our-work-content .standout {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 2.2;
+}
+
+.our-work-content .closing {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--lavender);
+  margin-top: 24px;
+}
+
+.video-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  justify-items: center;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 360px;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 9/16;
+  border: none;
+  display: block;
+}
+
+.video-card-info {
+  padding: 16px 20px;
+}
+
+.video-card-info h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.video-card-info p {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-top: 4px;
 }
 
 /* ---- TESTIMONY ---- */
@@ -1094,6 +1199,9 @@ h1, h2, h3, h4 {
       </div>
     </div>
     <div class="hero-visual">
+      <div class="hero-video-wrap">
+        <iframe src="https://www.youtube.com/embed/1HgqTaFEjzk" title="SMG Creative Services" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <div class="hero-illustration">
         <div class="hero-card">
           <div class="hero-card-icon" style="background: var(--lavender-light);">📱</div>
@@ -1126,6 +1234,35 @@ h1, h2, h3, h4 {
     <p>This is not just a service list. <span class="highlight">It is a production partner.</span> We help you think, plan, create, refine, and publish so your ideas stop sitting still and start showing up in the world.</p>
     <div class="testimony-divider"></div>
     <p class="testimony-tagline">That's the heart behind SMG Creative Services.</p>
+  </div>
+</section>
+
+<!-- ==================== OUR WORK ==================== -->
+<section class="our-work" id="our-work">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag" style="background: var(--lavender-light); color: var(--dark);">Our Work</div>
+      <h2>Our Work</h2>
+    </div>
+    <div class="our-work-content fade-up">
+      <p>For a lot of people, AI still feels confusing, intimidating, or like something built for everybody else.</p>
+      <p>That's where we come in.</p>
+      <p>At <strong>SMG Creative Services</strong>, we help businesses, brands, and creators make sense of the process and actually use it in a way that moves their goals forward. We take the mystery out of content creation, marketing support, editing, and production by turning complicated tools into a clear, guided workflow that works for real people and real businesses.</p>
+      <p class="standout">You do not need to know all the platforms.<br>You do not need to build your own system.<br>You do not need to figure it out alone.</p>
+      <p>We help you bridge the gap between your ideas and execution — using smart AI-powered workflows, creative strategy, and hands-on support to help you show up with confidence.</p>
+      <p>Our work is about making the process feel possible, practical, and powerful.</p>
+      <p class="closing">Because the goal is not just to use AI.<br>The goal is to help you create better content, build stronger visibility, and move your brand forward.</p>
+    </div>
+    <div class="video-grid fade-up">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/1HgqTaFEjzk" title="SMG Creative Services" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-card-info">
+          <h4>SMG Creative Services</h4>
+          <p>See how we work</p>
+        </div>
+      </div>
+      <!-- More videos will be added here as they are produced -->
+    </div>
   </div>
 </section>
 
