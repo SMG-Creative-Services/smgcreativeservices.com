@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SMG Creative Services — AI-Powered Content Production for Businesses and Creators</title>   
-<meta name="description" content="SMG Creative Services is an AI-powered content and marketing studio helping businesses, brands, and creators plan, produce, and publish social media and brand content.">
+<title>SMG Creative Services — You Don't Have to Figure Out AI</title>
+<meta name="description" content="SMG Creative Services partners with small businesses, filmmakers, and creators to bring their projects to life using AI-powered production. From concept to market.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -325,11 +325,23 @@ h1, h2, h3, h4 {
 .hero-video-wrap {
   position: relative;
   width: 100%;
-  max-width: 320px;
+  max-width: 300px;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 40px rgba(200, 162, 232, 0.25), 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid rgba(255,255,255,0.8);
+  background: #000;
+}
+
+.hero-video-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--lavender), var(--mint), var(--peach));
+  z-index: -1;
+  opacity: 0.6;
 }
 
 .hero-video-wrap iframe {
@@ -337,6 +349,7 @@ h1, h2, h3, h4 {
   aspect-ratio: 9/16;
   border: none;
   display: block;
+  border-radius: 17px;
 }
 
 /* ---- OUR WORK ---- */
@@ -388,17 +401,18 @@ h1, h2, h3, h4 {
 
 .video-card {
   background: #fff;
-  border-radius: 20px;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
   transition: all 0.3s;
   width: 100%;
-  max-width: 360px;
+  max-width: 340px;
+  border: 1px solid rgba(200, 162, 232, 0.15);
 }
 
 .video-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(200, 162, 232, 0.2), 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .video-card iframe {
@@ -406,6 +420,7 @@ h1, h2, h3, h4 {
   aspect-ratio: 9/16;
   border: none;
   display: block;
+  background: #000;
 }
 
 .video-card-info {
@@ -1191,11 +1206,11 @@ h1, h2, h3, h4 {
 <section class="hero" id="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1>AI-Powered Content<br>Production for <em>Businesses,</em><br>Brands, and Creators.</h1>
-      <p class="subheadline">Bring your ideas, your business, or your brand. We help you plan, produce, and publish content using smart AI-powered workflows — without you having to build the whole system yourself.</p>
+      <h1>You Don't Have to<br>Figure Out <em>AI.</em><br>That's What We're Here For.</h1>
+      <p class="subheadline">Partner with us. Bring your project. We handle the AI, the production, and the results.</p>
       <div class="hero-buttons">
-        <a href="#intake" class="btn-primary">Book a Discovery Conversation</a>
-        <a href="#services" class="btn-secondary">See How We Help</a>
+        <a href="#intake" class="btn-primary">Start Your Project</a>
+        <a href="#services" class="btn-secondary">See Our Services</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -1204,20 +1219,20 @@ h1, h2, h3, h4 {
       </div>
       <div class="hero-illustration">
         <div class="hero-card">
-          <div class="hero-card-icon" style="background: var(--lavender-light);">📱</div>
-          <div class="hero-card-text">Social Media Content<small>Strategy to Publish</small></div>
+          <div class="hero-card-icon" style="background: var(--lavender-light);">🎬</div>
+          <div class="hero-card-text">Film Production<small>Script to Screen</small></div>
         </div>
         <div class="hero-card">
           <div class="hero-card-icon" style="background: var(--mint-light);">🤖</div>
-          <div class="hero-card-text">AI Studio System<small>Smart Workflows</small></div>
+          <div class="hero-card-text">AI-Powered<small>Smart Workflows</small></div>
         </div>
         <div class="hero-card">
-          <div class="hero-card-icon" style="background: var(--peach-light);">✂️</div>
-          <div class="hero-card-text">Editing & Repurposing<small>Long to Short Form</small></div>
+          <div class="hero-card-icon" style="background: var(--peach-light);">🎨</div>
+          <div class="hero-card-text">Brand Content<small>Strategy to Publish</small></div>
         </div>
         <div class="hero-card">
           <div class="hero-card-icon" style="background: var(--sky-light);">📈</div>
-          <div class="hero-card-text">Marketing Support<small>Content to Growth</small></div>
+          <div class="hero-card-text">Marketing<small>Concept to Market</small></div>
         </div>
       </div>
     </div>
@@ -1228,12 +1243,12 @@ h1, h2, h3, h4 {
 <section class="testimony" id="testimony">
   <div class="testimony-inner fade-up">
     <div class="testimony-quote">"</div>
-    <h2>We Built the Kind of Creative Partner We Wish We Had</h2>
-    <p>We know what it feels like to have the vision but not the system. To know your business needs content, marketing, and momentum — but not have the time, team, or technical setup to produce it consistently.</p>
-    <p><span class="highlight">So we built one.</span> We created an AI-powered content studio designed to help businesses, creators, and brands move faster from idea to execution without losing the human side of the work.</p>
-    <p>This is not just a service list. <span class="highlight">It is a production partner.</span> We help you think, plan, create, refine, and publish so your ideas stop sitting still and start showing up in the world.</p>
+    <h2>We've Been Exactly Where You Are</h2>
+    <p>We know what it feels like to have the vision but not the tools. To have footage sitting on a hard drive going nowhere. To have a business that needs content but no idea where to start. To stare at a blank screen and wonder how everyone else seems to have it figured out.</p>
+    <p><span class="highlight">We didn't have connections. We didn't have a budget.</span> We figured it out. We learned the tools. We embraced AI before most people knew what it could do. And now we use everything we built to give other people the access we never had.</p>
+    <p>This isn't a service company that sells you a package and disappears. <span class="highlight">We partner with you.</span> We sit with your project like it's our own. Because we remember what it felt like to need exactly this — and have nobody to call.</p>
     <div class="testimony-divider"></div>
-    <p class="testimony-tagline">That's the heart behind SMG Creative Services.</p>
+    <p class="testimony-tagline">That's why we built SMG Creative Services.</p>
   </div>
 </section>
 
@@ -1271,50 +1286,65 @@ h1, h2, h3, h4 {
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag" style="background: var(--lavender-light); color: var(--dark);">Who This Is For</div>
-      <h2>Who We Help Best</h2>
-      <p>We work best with people who need content, strategy, and execution — but do not want to build a full in-house production and marketing system on their own.</p>
+      <h2>We Built This for You</h2>
+      <p>Every person here has the same problem — a vision that deserves to exist but no clear path to make it happen.</p>
     </div>
     <div class="audience-grid">
       <div class="audience-card fade-up">
         <div class="audience-card-icon">🏪</div>
-        <h3>Small Businesses</h3>
-        <p>You need consistent content, brand presence, and marketing support — but you do not have an internal content team to keep it moving.</p>
-      </div>
-      <div class="audience-card fade-up">
-        <div class="audience-card-icon">🎥</div>
-        <h3>Creators and Personal Brands</h3>
-        <p>You have ideas, footage, offers, or a message to share, but you need stronger strategy, cleaner execution, and more consistency across platforms.</p>
-      </div>
-      <div class="audience-card fade-up">
-        <div class="audience-card-icon">🏥</div>
-        <h3>Service Professionals</h3>
-        <p>Doctors, lawyers, consultants, therapists, and local businesses need content that builds trust, communicates value, and helps people find them.</p>
+        <h3>The Small Business Owner</h3>
+        <p>You know you need content. Social media, video, a brand presence — but you have no strategy, no team, and no time to figure it all out yourself.</p>
       </div>
       <div class="audience-card fade-up">
         <div class="audience-card-icon">🚀</div>
-        <h3>Growing Brands</h3>
-        <p>You are ready to level up your content operation with better planning, better messaging, stronger campaigns, and a more professional creative presence.</p>
+        <h3>The Startup with Big Ideas</h3>
+        <p>You have the vision and the energy but no execution plan. Pitch decks, brand videos, launch content — it all needs to exist yesterday.</p>
       </div>
       <div class="audience-card fade-up">
-        <div class="audience-card-icon">✂️</div>
-        <h3>Businesses with Existing Footage</h3>
-        <p>You already have video, podcast clips, interviews, or raw media — you just need it turned into polished, useful content that can actually be published.</p>
+        <div class="audience-card-icon">🎥</div>
+        <h3>The Struggling Creator</h3>
+        <p>You're making content but it's not connecting. You need direction — someone who can look at what you're building and tell you how to level it up.</p>
       </div>
       <div class="audience-card fade-up">
-        <div class="audience-card-icon">🎬</div>
-        <h3>Special Creative Projects</h3>
-        <p>When a project needs bigger production support, brand video, or specialty creative work, we can step in there too — but that is not the only thing we do.</p>
+        <div class="audience-card-icon">💡</div>
+        <h3>The Stuck Entrepreneur</h3>
+        <p>You have the idea. Maybe you've started. But somewhere between the concept and the finished product, you got stuck. We unstick people.</p>
       </div>
-    </div>    
+      <div class="audience-card fade-up">
+        <div class="audience-card-icon">🎞️</div>
+        <h3>The Filmmaker Who Shot It</h3>
+        <p>You finished filming but now what? Color grading, sound design, festival cuts, a poster, distribution strategy — you need the whole back half.</p>
+      </div>
+      <div class="audience-card fade-up">
+        <div class="audience-card-icon">🏥</div>
+        <h3>The Doctor, Lawyer, or Small Office</h3>
+        <p>You need professional content for your practice but you don't know where to begin. You don't have a marketing department — you need one built for you.</p>
+      </div>
+      <div class="audience-card fade-up">
+        <div class="audience-card-icon">🎛️</div>
+        <h3>The Post-Production Client</h3>
+        <p>Your edit is done but it needs polish. Audio sweetening, color correction, motion graphics, final mastering — the finishing touches that make it professional.</p>
+      </div>
+      <div class="audience-card fade-up">
+        <div class="audience-card-icon">🗺️</div>
+        <h3>The Person Who Just Needs a Plan</h3>
+        <p>You don't need us to build everything. You need someone who knows the landscape to sit with you and map out your next move. We do that too.</p>
+      </div>
+      <div class="audience-card fade-up">
+        <div class="audience-card-icon">🧠</div>
+        <h3>The Therapist Growing a Practice</h3>
+        <p>You're a great clinician — but marketing isn't your training. You need help finding leads, attracting new clients, building referral partnerships, and showing up online so your group practice can grow. We build the plan and walk beside you.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ==================== MARKETING BANNER ==================== -->
 <section class="marketing-banner" id="marketing">
   <div class="container fade-up">
-    <h2>More Than Content Creation.<br>A Smarter Content Engine.</h2>
-    <p>We combine strategy, production, editing, and marketing support under one roof — powered by AI workflows that help your business move faster without feeling robotic.</p>
-    <a href="#intake" class="btn-white">Let's Talk About Your Content</a>
+    <h2>We Don't Just Produce Your Project.<br>We Take It to Market.</h2>
+    <p>From the first concept to the final published piece — strategy, production, and deployment under one roof. You don't need five vendors. You need one partner.</p>
+    <a href="#intake" class="btn-white">Let's Talk About Your Project</a>
   </div>
 </section>
 
@@ -1323,74 +1353,74 @@ h1, h2, h3, h4 {
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag" style="background: var(--mint-light); color: var(--dark);">What We Do</div>
-      <h2>How We Help</h2>
-      <p>Our core focus is content production, social media support, and marketing execution — with advanced production services available when your project needs more.</p>
+      <h2>Our Services</h2>
+      <p>Nine capabilities. One team. Every project gets the full weight of our AI-powered production system.</p>
     </div>
     <div class="services-grid">
       <!-- 1 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--lavender-light);">📱</div>
-        <h3>Social Media Content Production</h3>
-        <p>Platform-ready content for Instagram, TikTok, YouTube, LinkedIn, and more. We help you create content that feels native, relevant, and consistent.</p>
-        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Core Service</div>
+        <div class="service-icon" style="background: var(--lavender-light);">🎬</div>
+        <h3>Film and Video Production</h3>
+        <p>From concept through final delivery. Short films, brand videos, documentaries, series content. We handle pre-production, shooting guidance, and full post.</p>
+        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Full Production</div>
       </div>
       <!-- 2 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--mint-light);">🧠</div>
-        <h3>Content Strategy and Planning</h3>
-        <p>Content direction, campaign ideas, messaging support, series planning, and strategic guidance so you are not just posting randomly and hoping it works.</p>
-        <div class="service-tag" style="background: var(--mint-light); color: var(--dark);">Strategy</div>
+        <div class="service-icon" style="background: var(--mint-light);">✍️</div>
+        <h3>Script Writing</h3>
+        <p>Story development, screenplay formatting, brand scripts, video scripts, podcast outlines. We write for the screen, the stage, and the feed.</p>
+        <div class="service-tag" style="background: var(--mint-light); color: var(--dark);">Creative Writing</div>
       </div>
       <!-- 3 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--peach-light);">📈</div>
-        <h3>Marketing Strategy and Execution</h3>
-        <p>We help connect the content to the bigger goal — audience growth, visibility, launches, brand presence, and campaign support.</p>
-        <div class="service-tag" style="background: var(--peach-light); color: var(--dark);">Growth Support</div>
+        <div class="service-icon" style="background: var(--peach-light);">✂️</div>
+        <h3>Video Editing</h3>
+        <p>Assembly cuts, rough cuts, final cuts. Long-form and short-form. We edit for narrative, for marketing, and for platform-specific delivery.</p>
+        <div class="service-tag" style="background: var(--peach-light); color: var(--dark);">Post-Production</div>
       </div>
       <!-- 4 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--sky-light);">🤖</div>
-        <h3>AI-Powered Content Systems</h3>
-        <p>Our studio uses AI-assisted workflows for research, concepting, scripting support, organization, and production efficiency so projects move faster and smarter.</p>
-        <div class="service-tag" style="background: var(--sky-light); color: var(--dark);">AI Workflow</div>
+        <div class="service-icon" style="background: var(--sky-light);">🎵</div>
+        <h3>Original Scoring and Sound Design</h3>
+        <p>Custom music, audio sweetening, sound effects, mixing, and mastering. Every project deserves to sound as good as it looks.</p>
+        <div class="service-tag" style="background: var(--sky-light); color: var(--dark);">Audio</div>
       </div>
       <!-- 5 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--lavender-light);">✂️</div>
-        <h3>Video Editing and Repurposing</h3>
-        <p>We turn long-form footage, interviews, podcasts, and raw media into polished content packages, short-form clips, and publish-ready assets.</p>
-        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Editing</div>
+        <div class="service-icon" style="background: var(--lavender-light);">🎨</div>
+        <h3>Color Correction and Grading</h3>
+        <p>Professional color work that transforms your footage. We match shots, build looks, and deliver cinema-grade color for any format.</p>
+        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Post-Production</div>
       </div>
       <!-- 6 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--mint-light);">✍️</div>
-        <h3>Script Writing and Messaging Support</h3>
-        <p>Video scripts, messaging structure, content hooks, campaign language, and creative writing support that helps your message land clearly.</p>
-        <div class="service-tag" style="background: var(--mint-light); color: var(--dark);">Writing</div>
+        <div class="service-icon" style="background: var(--mint-light);">🔮</div>
+        <h3>Animation and Motion Graphics</h3>
+        <p>2D animation, motion graphics, title sequences, explainer videos, animated logos. Movement that tells your story.</p>
+        <div class="service-tag" style="background: var(--mint-light); color: var(--dark);">Animation</div>
       </div>
       <!-- 7 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--peach-light);">🎨</div>
-        <h3>Brand Content Production</h3>
-        <p>Branded creative assets, visual direction, and content support for businesses that want a stronger, more cohesive presence across platforms.</p>
+        <div class="service-icon" style="background: var(--peach-light);">📱</div>
+        <h3>Social Media and Brand Content</h3>
+        <p>Platform-native content for Instagram, TikTok, YouTube, LinkedIn. We build your brand presence from the ground up — visuals, voice, and strategy.</p>
         <div class="service-tag" style="background: var(--peach-light); color: var(--dark);">Brand Building</div>
       </div>
       <!-- 8 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--sky-light);">🔮</div>
-        <h3>Animation and Motion Graphics</h3>
-        <p>Motion graphics, animated elements, explainers, and visual polish that help your content feel more dynamic and professional.</p>
-        <div class="service-tag" style="background: var(--sky-light); color: var(--dark);">Creative Support</div>
+        <div class="service-icon" style="background: var(--sky-light);">📈</div>
+        <h3>Marketing Strategy and Execution</h3>
+        <p>Concept to market. We don't just produce your content — we build the strategy to deploy it. Audience targeting, platform strategy, launch plans, and ongoing campaigns.</p>
+        <div class="service-tag" style="background: var(--sky-light); color: var(--dark);">Full Deployment</div>
       </div>
       <!-- 9 -->
       <div class="service-card fade-up">
-        <div class="service-icon" style="background: var(--lavender-light);">🎬</div>
-        <h3>Film and Specialty Production</h3>
-        <p>For clients who need larger visual projects, we also support brand videos, film-focused work, and bigger productions with the right collaborators.</p>
-        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Secondary Service</div>
+        <div class="service-icon" style="background: var(--lavender-light);">🧭</div>
+        <h3>Project Strategy and Consulting</h3>
+        <p>Not sure where to start? For a small fee, we'll sit with you, assess your project, and map out your next steps. Direction when you need it most.</p>
+        <div class="service-tag" style="background: var(--lavender-light); color: var(--dark);">Consulting</div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>
 
@@ -1399,15 +1429,15 @@ h1, h2, h3, h4 {
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag" style="background: var(--peach-light); color: var(--dark);">Our Process</div>
-      <h2>How Our AI Studio Works</h2>
-      <p>Six stages. Smart workflows, human creative direction, and a process built to move your content from idea to published output.</p>
+      <h2>The Production Cycle</h2>
+      <p>Six stages. AI agents working alongside human creativity at every step. This is how we bring your project to life.</p>
     </div>
     <div class="cycle-timeline">
       <!-- Stage 1 -->
       <div class="cycle-stage stage-1 fade-up">
         <div class="cycle-content">
-          <h3>Discovery and Goals</h3>
-          <p>We learn what you do, who you want to reach, and what the content needs to accomplish. AI-supported research helps us move with more clarity from the beginning.</p>
+          <h3>Discovery and Strategy</h3>
+          <p>We learn your vision, define goals, identify your audience, and map the full project scope. AI research agents analyze your market and competition so we start with real intelligence — not guesswork.</p>
         </div>
         <div class="cycle-node">
           <div class="cycle-number">1</div>
@@ -1434,15 +1464,15 @@ h1, h2, h3, h4 {
           <div class="cycle-number">2</div>
         </div>
         <div class="cycle-content">
-          <h3>Strategy and Content Planning</h3>
-          <p>We shape content direction, campaign ideas, messaging, hooks, and creative angles so the work is not only well made but aimed in the right direction.</p>
+          <h3>Creative Development</h3>
+          <p>Scripts, storyboards, brand guidelines, visual direction — all produced with AI writing and design agents working under human creative direction. Every concept is shaped by strategy and built for your audience.</p>
         </div>
       </div>
       <!-- Stage 3 -->
       <div class="cycle-stage stage-3 fade-up">
         <div class="cycle-content">
           <h3>Production</h3>
-          <p>We create the content itself — whether that means short-form production, branded assets, motion support, or helping transform raw ideas into real deliverables.</p>
+          <p>Cameras roll. Animation renders. Graphics build. Our production agents manage timelines, organize assets, and keep every moving piece on track while the creative team focuses on making it great.</p>
         </div>
         <div class="cycle-node">
           <div class="cycle-number">3</div>
@@ -1470,15 +1500,15 @@ h1, h2, h3, h4 {
           <div class="cycle-number">4</div>
         </div>
         <div class="cycle-content">
-          <h3>Editing and Packaging</h3>
-          <p>We edit, refine, repurpose, polish, and package your content so it is usable across platforms and ready for real publishing, not just sitting in a folder.</p>
+          <h3>Post-Production</h3>
+          <p>Editing, color grading, sound design, motion graphics, and final mastering. AI agents handle technical processing while human editors shape the story. This is where good becomes professional.</p>
         </div>
       </div>
       <!-- Stage 5 -->
       <div class="cycle-stage stage-5 fade-up">
         <div class="cycle-content">
           <h3>Review and Refinement</h3>
-          <p>You review the direction. We adjust where needed. This stage makes sure the final content feels aligned, polished, and ready to represent your brand well.</p>
+          <p>Quality assurance across every deliverable. You review. We refine. AI QA agents check technical specs, accessibility, and platform requirements. Nothing ships until it meets the standard.</p>
         </div>
         <div class="cycle-node">
           <div class="cycle-number">5</div>
@@ -1505,8 +1535,8 @@ h1, h2, h3, h4 {
           <div class="cycle-number">6</div>
         </div>
         <div class="cycle-content">
-          <h3>Publishing and Launch Support</h3>
-          <p>We help you move the content out into the world with publishing support, launch guidance, and marketing-minded execution so the work has somewhere to go.</p>
+          <h3>Launch and Market</h3>
+          <p>Your project goes live. We handle platform deployment, social distribution, audience targeting, and launch campaigns. We don't hand you a file and wish you luck — we take it to market with you.</p>
         </div>
       </div>
     </div>
@@ -1518,29 +1548,29 @@ h1, h2, h3, h4 {
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-tag" style="background: var(--sky-light); color: var(--dark);">Getting Started</div>
-      <h2>Getting Started Is Simple</h2>
-      <p>Four steps between where you are now and a clearer content system with real momentum behind it.</p>
+      <h2>How It Works</h2>
+      <p>Four steps between where you are now and where your project needs to be.</p>
     </div>
     <div class="steps-grid">
       <div class="step fade-up">
         <div class="step-number">📝</div>
-        <h3>Tell Us What You Need</h3>
-        <p>Tell us about your business, brand, project, or content goals. The more context you give us, the better we can guide the next step.</p>
+        <h3>Fill Out the Intake Form</h3>
+        <p>Tell us about your project, your goals, and where you are right now. The more detail, the better we can help.</p>
       </div>
       <div class="step fade-up">
         <div class="step-number">📞</div>
         <h3>Discovery Call</h3>
-        <p>We talk through your goals, your current content situation, and what kind of support actually makes sense for where you are right now.</p>
+        <p>We schedule a conversation to understand your vision. No pitches. No pressure. Just two people figuring out the best path forward.</p>
       </div>
       <div class="step fade-up">
         <div class="step-number">🗂️</div>
-        <h3>Custom Plan</h3>
-        <p>We put together a right-fit plan based on your goals, your capacity, and the kind of content or support you actually need.</p>
+        <h3>Custom Proposal</h3>
+        <p>We build a tailored plan with scope, timeline, and deliverables. You approve it. We get to work.</p>
       </div>
       <div class="step fade-up">
         <div class="step-number">🚀</div>
-        <h3>We Start Building</h3>
-        <p>Once approved, we move into strategy, production, editing, and support using the same AI-powered studio system that drives our workflow.</p>
+        <h3>Production Begins</h3>
+        <p>Your project enters our production cycle. You stay involved at every stage. We build it together.</p>
       </div>
     </div>
   </div>
@@ -1551,8 +1581,8 @@ h1, h2, h3, h4 {
   <div class="intake-inner">
     <div class="section-header fade-up">
       <div class="section-tag" style="background: rgba(200,162,232,0.2); color: var(--lavender-light);">Start Here</div>
-      <h2>Tell Us What You Need</h2>
-      <p>Fill out the form below and we’ll reach out within 48 hours. No pressure — just a conversation about your goals and the best way to support them.</p>
+      <h2>Tell Us About Your Project</h2>
+      <p>Fill out the form below and we'll reach out within 48 hours. No commitment. No pressure. Just a conversation.</p>
     </div>
     <form action="https://formspree.io/f/mojpkrvb" method="POST" class="fade-up">
       <div class="form-grid">
@@ -1580,13 +1610,15 @@ h1, h2, h3, h4 {
           <label>Project Type <span class="required">*</span></label>
           <select name="project_type" required>
             <option value="" disabled selected>Select a project type</option>
+            <option value="film_video">Film and Video Production</option>
+            <option value="script_writing">Script Writing</option>
+            <option value="video_editing">Video Editing</option>
+            <option value="scoring_sound">Original Scoring and Sound Design</option>
+            <option value="color_grading">Color Correction and Grading</option>
+            <option value="animation">Animation and Motion Graphics</option>
             <option value="social_brand">Social Media and Brand Content</option>
             <option value="marketing">Marketing Strategy and Execution</option>
-            <option value="video_editing">Video Editing and Repurposing</option>
-            <option value="script_writing">Script Writing and Messaging Support</option>
-            <option value="animation">Animation and Motion Graphics</option>
             <option value="consulting">Project Strategy and Consulting</option>
-            <option value="film_video">Film and Specialty Production</option>
             <option value="multiple">Multiple Services</option>
             <option value="not_sure">Not Sure Yet</option>
           </select>
@@ -1603,8 +1635,8 @@ h1, h2, h3, h4 {
           </select>
         </div>
         <div class="form-group full-width">
-          <label>Tell Us About Your Project or Content Needs <span class="required">*</span></label>
-          <textarea name="project_description" required placeholder="Tell us what you do, what kind of content or support you need, your goals, and where you are right now. The more detail you give us, the better we can help."></textarea>
+          <label>Tell Us About Your Project <span class="required">*</span></label>
+          <textarea name="project_description" required placeholder="Describe your project, your goals, and where you are in the process. The more detail you give us, the better we can help."></textarea>
         </div>
         <div class="form-group">
           <label>Timeline</label>
@@ -1639,7 +1671,7 @@ h1, h2, h3, h4 {
         </div>
       </div>
       <div class="form-submit">
-        <button type="submit">Submit Your Inquiry</button>
+        <button type="submit">Submit Your Project</button>
       </div>
       <p class="form-note">We respond to every submission within 48 hours. Your information is never shared.</p>
     </form>
@@ -1649,7 +1681,7 @@ h1, h2, h3, h4 {
 <!-- ==================== FOOTER ==================== -->
 <footer class="footer">
   <div class="footer-logo">SMG <span>Creative Services</span></div>
-  <p>AI-powered content, marketing, and creative support for businesses, brands, and creators.</p>
+  <p>A division of Sando Media Group</p>
   <div class="footer-divider"></div>
   <p>
     <a href="https://smgcreativeservices.com">smgcreativeservices.com</a><br>
